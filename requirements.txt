@@ -17,3 +17,4 @@ Shapely>=1.2.13
 six==1.15.0
 sqlalchemy==1.4.51
 xlrd==2.0.1
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
