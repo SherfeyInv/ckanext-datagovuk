@@ -74,7 +74,7 @@ ckan datagovuk remove-dgu-test-data
 
 ## Deploying CKAN core and base images
 
-> You rarely need to perform these steps and should only be used when there's an upstream CKAN change.
+> You rarely need to perform these steps and should only be used when there's an upstream CKAN change or a change to a dcat, spatial or harvester sha in the base Dockerfile.
 
 Before building and pushing updates to the core and base CKAN images you will need to ensure that the version number or patch is incremented to prevent overwriting of existing images in the `build-config.yaml` and ensure that the CKAN Dockerfiles have the correct version and patch values.
 

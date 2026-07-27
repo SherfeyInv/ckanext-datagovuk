@@ -1,4 +1,4 @@
-FROM ghcr.io/alphagov/ckan:2.10.7-b-core
+FROM ghcr.io/alphagov/ckan:2.10.7-c-core
 
 COPY production.ini $CKAN_CONFIG/production.ini
 # Set CKAN_INI
@@ -14,8 +14,8 @@ ENV ckan_harvest_sha='9fb44f79809a1c04dfeb0e1ca2540c5ff3cacef4'
 ENV ckan_dcat_fork='ckan'
 ENV ckan_dcat_sha='618928be5a211babafc45103a72b6aab4642e964'
 
-# raise error on non 200 HTTP responses
-ENV ckan_spatial_sha='92e03974d9352ff2ad22686928b5594f8a7a8ad3'
+# add datagovuk-harvester to user-agent request headers
+ENV ckan_spatial_sha='4ed56e1cb41ded3daf8b06730e022f0f6bd8a271'
 ENV ckan_spatial_fork='alphagov'
 
 RUN echo "pip install DGU extensions..." && \
