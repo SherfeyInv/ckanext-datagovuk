@@ -1,4 +1,4 @@
-FROM ghcr.io/alphagov/ckan:2.10.7-b-base
+FROM ghcr.io/alphagov/ckan:2.10.7-c-base
 
 USER root
 
