@@ -14,8 +14,8 @@ ENV ckan_harvest_sha='9fb44f79809a1c04dfeb0e1ca2540c5ff3cacef4'
 ENV ckan_dcat_fork='ckan'
 ENV ckan_dcat_sha='618928be5a211babafc45103a72b6aab4642e964'
 
-# add datagovuk-harvester to user-agent request headers
-ENV ckan_spatial_sha='4ed56e1cb41ded3daf8b06730e022f0f6bd8a271'
+# allow errored harvest objects to continue processing if they have not been added before
+ENV ckan_spatial_sha='6f78ee7454b5fcdf7ef11d81bb08b06e9741de70'
 ENV ckan_spatial_fork='alphagov'
 
 RUN echo "pip install DGU extensions..." && \
